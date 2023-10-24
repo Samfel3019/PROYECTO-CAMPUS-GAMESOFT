@@ -1,57 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image" href="material/logo.png">
-    <title>Campus GameSoft - Inicio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Iniciar Sesión</title> 
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div>
+        <img class="imagen-logo" src="material/logo.png" alt="logo">
+    </div>
     <section>
-        <img class="imagen" src="material/logo.png" alt="logo">
-        <h1 class="campus-titulo">Campus GameSoft</h1>
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <label>Usuario</label>
+            <input type="username" placeholder="Usuario" id="username" required autofocus>
+            <label>Contraseña</label>
+            <input type="password" placeholder="**********" id="password" required>
+            <input type="submit" value="Ingresar" class="boton">
+        </form>
+        <p>No tienes una cuenta? <a href="signup.html">Registro</a></p>
     </section>
-
-    <nav id="contenedor">
-        <div id="contenedor-lista">
-            <ul id="lista">
-                <li>
-                    <a href="clientes.html">Gestión de clientes</a>
-                </li> 
-                <li>
-                    <a href="#videojuegos-session">Video Juegos</a>
-                </li>
-                <li>
-                    <a href="#contenedor-papas">Tienda</a>
-                </li>
-                <li>
-                    <a href="#todos-otros">Fidelización</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    <h1 class="titulo-video">Video Juegos</h1>
-
-    <div id="videojuegos-session">
-        <h1 class="videojuegos-titulo">Video Juegos</h1>
-    </div>
-
-    <div class="juegos" id="juegos-container">
-        <!-- Espacio para mostrar la lista de juegos -->
-    </div>
-
-    <div class="acciones">
-        <h2 class="acciones-titulo">OPCIONES:</h2>
-        <button id="crearJuego">Crear Juego</button>
-        <button id="modificarJuego">Modificar Juego</button>
-        <button id="eliminarJuego">Eliminar Juego</button>
-        <button id="comprarJuego">Comprar Juego</button>
-    </div>
-    <script src="index.js"></script>
-    <footer>
-        <p class="derechos">Derechos reservados © Campus GameSoft 2023 </p>
-    </footer>
+    <script src="js/login.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
